@@ -67,7 +67,7 @@ void kill_task_10(Event event) {
 class Event {
   Entity entity;
   ServerPlayer player;
-  boolean predicate;
+  boolean criteria;
 }
 ```
 
@@ -159,13 +159,13 @@ TODO 可以添加输入端口数量
 
 ```java
 // 假设脚本节点的ID为10
-void script_predicate_10(Event event) {
+void script_criteria_10(Event event) {
   // ...
 }
 
 class Event {
   ServerPlayer player;
-  boolean predicate;
+  boolean criteria;
 }
 ```
 
@@ -205,6 +205,8 @@ class Event {
 
 行为节点有一个输入端口，没有输出端口
 
+行为节点可以接在任何任务目标节点或流程控制节点之后。
+
 ### 拿走/给予物品
 
 属性：
@@ -214,3 +216,29 @@ class Event {
 正整数：数量
 
 物品（物品怎么做输入？）
+
+### 开始任务
+
+属性：
+
+任务（任务选单）
+
+### 开始对话
+
+属性：
+
+对话（对话选单）
+
+### 聊天栏输出
+
+属性：
+
+文本内容
+
+### 指令
+
+属性：
+
+指令内容
+
+### 脚本

@@ -150,3 +150,9 @@ AutomataApi.startTask(UUID playerId, String questId, int taskId);
 ```java
 AutomataApi.completeTask(UUID playerId, String questId, int taskId);
 ```
+
+## 模组API
+
+### 注册新Task类型
+
+TODO
